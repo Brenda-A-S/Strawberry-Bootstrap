@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strawbery</title>
+
+    <link rel="shortcut icon" href="imgs/strawberry_7315465.png" type="image/x-icon">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        a,
+        li {
+            display: block;
+        }
+
+        .carousel img {
+            width: 100%;
+            max-height: 93vh;
+            object-fit: cover;
+        }
+
+        .card img {
+            object-fit: cover;
+            height: 270px;
+        }
+
+        header {
+            font-weight: 600;
+        }
+
+        #header .active, #sobre-nos, #footer {
+            background-color: var(--bs-danger) !important
+        }
+
+        #sobre-nos>div {
+            min-height: 100vh;
+        }
+
+        #sobre-nos img {
+            width: 100%;
+            object-fit: cover;
+            height: 570px;
+        }
+
+        #contatos span {
+            font-weight: 600;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="sticky-top bg-light text-danger">
+        <header class="container" id="header">
+            <div class="navbar navbar-expand-lg">
+                <a href=""><img src="./imgs/strawberry_7315465.png" width="50" alt=""></a>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <nav class="justify-content-end collapse navbar-collapse" id="menu">
+                    <ul class="nav navbar-nav nav-pills text-center">
+                        <li class="nav-item"><a class="p-3 nav-link active" href="#inicio">Início</a></li>
+                        <li class="nav-item"><a class="p-3 nav-link" href="#catalogo">Catálogo</a></li>
+                        <li class="nav-item"><a class="p-3 nav-link" href="#sobre-nos">Sobre nós</a></li>
+                        <li class="nav-item"><a class="p-3 nav-link" href="#contatos">Contatos</a></li>
+                    </ul>
+                </nav>
+
+            </div>
+        </header>
+    </div>
+
+    <div data-bs-spy="scroll" data-bs-target="#header">
+        <div id="inicio" style="height: 5px;"></div>
+        <div class="carousel slide" data-bs-ride="carousel" id="carousel">
+            <div class="carousel-inner mw-100">
+                <div data-bs-interval="3000" class="carousel-item active">
+                    <img class="d-block"
+                        src="https://images.unsplash.com/photo-1464965911861-746a04b4bca6?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="">
+                    <div class="carousel-caption">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </div>
+                </div>
+                <div data-bs-interval="3000" class="carousel-item">
+                    <img class="d-block"
+                        src="https://images.unsplash.com/photo-1507598641400-ec3536ba81bc?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="">
+                    <div class="carousel-caption">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </div>
+                </div>
+                <div data-bs-interval="3000" class="carousel-item">
+                    <img class="d-block"
+                        src="https://images.unsplash.com/photo-1606050627722-3646950540ca?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="">
+                    <div class="carousel-caption">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </div>
+                </div>
+                <div data-bs-interval="3000" class="carousel-item">
+                    <img class="d-block"
+                        src="https://images.unsplash.com/photo-1647962584653-d18adcbf43ed?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="">
+                    <div class="carousel-caption">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </div>
+                </div>
+            </div>
+            <button data-bs-target="#carousel" data-bs-slide="prev" class="carousel-control-prev" type="button"><span
+                    class="carousel-control-prev-icon"></span></button>
+            <button data-bs-target="#carousel" data-bs-slide="next" class="carousel-control-next" type="button"><span
+                    class="carousel-control-next-icon"></span></button>
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"></button>
+                <button type="button" data-bs-target="#carousel" data-bs-slide-to="3"></button>
+            </div>
+        </div>
+
+        <div id="catalogo" class="container">
+            <div class="mt-3 mb-3">
+                <nav class="nav nav-tabs">
+                    <button data-bs-toggle="tab" data-bs-target="#p-1" class="nav-link active" type="button">Página
+                        1</button>
+                    <button data-bs-toggle="tab" data-bs-target="#p-2" class="nav-link" type="button">Página 2</button>
+                    <button data-bs-toggle="tab" data-bs-target="#p-3" class="nav-link" type="button">Página 3</button>
+                </nav>
+                <div class="tab-content">
+                    <div class="text-center p-3 tab-pane fade show active" id="p-1">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-6">
+                                <div class="card p-2">
+                                    <img src="https://images.unsplash.com/photo-1601004890684-d8cbf643f5f2?q=80&w=2030&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                        alt="">
+                                    <h4>Morango</h4>
+                                    <a href="" class="btn btn-danger">Comprar</a>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="card p-2 text-center">
+                                    <img src="https://images.unsplash.com/photo-1559181567-c3190ca9959b?q=80&w=1528&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                        alt="">
+                                    <h4>Cereja</h4>
+                                    <a href="" class="btn btn-danger">Comprar</a>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="card p-2 text-center">
+                                    <img src="https://images.unsplash.com/photo-1595475207225-428b62bda831?q=80&w=1480&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                        alt="">
+                                    <h4>Melancia</h4>
+                                    <a href="" class="btn btn-danger">Comprar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center p-3 tab-pane fade show" id="p-2">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-6">
+                                <div class="card p-2">
+                                    <img src="https://images.unsplash.com/photo-1557800636-894a64c1696f?q=80&w=1965&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                        alt="">
+                                    <h4>Tangerina</h4>
+                                    <a href="" class="btn btn-danger">Comprar</a>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="card p-2">
+                                    <img src="https://plus.unsplash.com/premium_photo-1664527307725-362b589c406d?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                        alt="">
+                                    <h4>Banana</h4>
+                                    <a href="" class="btn btn-danger">Comprar</a>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="card p-2">
+                                    <img src="https://images.unsplash.com/photo-1523049673857-eb18f1d7b578?q=80&w=1550&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                        alt="">
+                                    <h4>Abacate</h4>
+                                    <a href="" class="btn btn-danger">Comprar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center p-3 tab-pane fade show" id="p-3">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-6">
+                                <div class="card p-2">
+                                    <img src="https://images.unsplash.com/photo-1594304466740-01a51b280fd3?q=80&w=1931&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                        alt="">
+                                    <h4>Limão</h4>
+                                    <a href="" class="btn btn-danger">Comprar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="sobre-nos">
+            <div class="container d-flex justify-content-center align-items-center">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12">
+                        <img class="rounded"
+                            src="https://images.unsplash.com/photo-1563746098251-d35aef196e83?q=80&w=2076&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            alt="">
+                    </div>
+                    <div
+                        class="col-lg-6 col-md-12 p-2 d-flex justify-content-center flex-column align-items-start text-light">
+                        <h1>Sobre nós</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis ex aspernatur
+                            mollitia.
+                            Animi, sapiente molestias provident itaque tempora laboriosam nobis doloremque fuga
+                            accusamus?
+                            Possimus culpa ullam dolorem mollitia assumenda fugit.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="contatos">
+            <div class="container pt-5 pb-5">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12 d-flex align-items-center">
+                        <h1>Contatos</h1>
+                    </div>
+                    <ul class="col-lg-6 col-md-12 p-0 m-0 d-flex justify-content-center">
+                        <li class="m-2">
+                            Tel: <span>(11) 9 9999-9999</span>
+                        </li>
+                        <li class="m-2">
+                            Tel: <span>(11) 9 9999-9999</span>
+                        </li>
+                        <li class="m-2">
+                            E-mail: <span>email@email.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer id="footer">
+        <div class="container p-2 text-center">
+            <a href="https://github.com/Brenda-A-S/Strawberry-Bootstrap" class="text-light">Meu GitHub</a>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
